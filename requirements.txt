@@ -1,0 +1,17 @@
+# --- Core AI Libraries ---
+gfpgan==1.3.8
+realesrgan==0.3.0
+
+# --- PyTorch (GPU) ---
+# We force these specific, known-compatible versions
+torch==2.0.1
+torchvision==0.15.2
+
+# --- Dependencies (pulled in by the above) ---
+basicsr==1.4.2
+facexlib==0.3.0
+
+# --- Utilities ---
+tqdm
+numpy
+opencv-python

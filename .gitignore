@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+.python-version
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output
+# (We might want to track *some* output, but a generic
+# 'output' folder should be ignored)
+output/
+restored_videos/
+temp/
+
+# IDEs
+.idea/
+.vscode/
+.windsurf/
+.cursor/
+
+# TEST FILE
+3_sec_test.mp4
+tests/
