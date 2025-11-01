@@ -9,6 +9,9 @@ venv/
 .DS_Store
 Thumbs.db
 
+# MODELS WEIGHTS
+gfpgan/
+
 # Output
 # (We might want to track *some* output, but a generic
 # 'output' folder should be ignored)

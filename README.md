@@ -84,6 +84,7 @@ source venv/bin/activate
 python enhance.py \
     --input "/path/to/my/video.mp4" \
     --output "/path/to/my/restored_video.mp4"
+    [--parallel] # (optional) in case you are on a CPU only machine, this flag forces the use of parallel processing (ignored if GPU is available) 
 
 # --- OR ---
 
@@ -91,6 +92,7 @@ python enhance.py \
 python enhance.py \
     --input "/path/to/videos_folder/" \
     --output "/path/to/restored_folder/"
+    [--parallel] # (optional) in case you are on a CPU only machine, this flag forces the use of parallel processing (ignored if GPU is available) 
 ```
 
 
@@ -117,7 +119,7 @@ This will create `chunk_01.mp4`, `chunk_02.mp4`, etc., in the same directory.
 
 ### 2. Google Colab Workflow
 
-1. **Open the Colab Notebook**: [Link to your Colab Notebook - we will create this]
+1. **Open the Colab Notebook**
 2. **Runtime**: In the Colab menu, select **Runtime > Change runtime type > T4 GPU**.
 3. **Upload**: In the Colab "Files" sidebar, upload `requirements.txt` and your first chunk (e.g., `chunk_01.mp4`).
 4. **Run Cells**: Follow the notebook instructions to:
@@ -127,7 +129,7 @@ This will create `chunk_01.mp4`, `chunk_02.mp4`, etc., in the same directory.
 5. **Download**: Download the resulting `restored_chunk_01.mp4`.
 6. **Repeat**: Delete the processed files from Colab to save space, then upload `chunk_02.mp4` and repeat.
 
-### Local Reassembly: Stitch Chunks
+### 3. Local Reassembly: Stitch Chunks
 
 Once you have downloaded all your restored chunks, use this script to join them back together:
 

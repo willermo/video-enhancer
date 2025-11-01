@@ -7,11 +7,11 @@ realesrgan==0.3.0
 torch==2.0.1
 torchvision==0.15.2
 
-# --- Dependencies (pulled in by the above) ---
+# --- Dependencies ---
 basicsr==1.4.2
 facexlib==0.3.0
 
-# --- Utilities ---
+# --- Utilities & Critical Pins ---
+numpy==1.26.4           # Pinned to 1.x for basicsr/torch
+opencv-python==4.9.0.80  # Pinned to 4.9.x for NumPy 1.x compatibility
 tqdm
-numpy
-opencv-python
